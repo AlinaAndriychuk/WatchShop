@@ -1,3 +1,3 @@
 # WatchShop
 Home page 
-[Link](https://github.com/alinaandriychuk/WatchShop/)
+[Link](https://alinaandriychuk.github.io/TripToDream/)
