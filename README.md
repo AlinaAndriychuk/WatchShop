@@ -1,3 +1,3 @@
 # WatchShop
 Home page 
-[Link](https://alinaandriychuk.github.io/WatchShop/app/index.html)
+[Link](https://alinaandriychuk.github.io/WatchShop/app/)
