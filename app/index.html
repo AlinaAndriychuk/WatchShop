@@ -4,15 +4,288 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Documents</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Watch Shop</title>
     <script src = "../node_modules/gsap/dist/gsap.min.js"></script>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
-    <img class="logo" src="img/logo.png" alt="logo">
-    <p>start</p>
-    
-    
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <img class="header__logo" src="img/logo.png" alt="logo">
+                <nav class="header__navigation">
+                    <menu class="header__menu">
+                        <li class="header__item">
+                            <a href="#" class="header__link-item">About Zalora</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link-item">Catalogue</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link-item">Gallery</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link-item">Contacts</a>
+                        </li>
+                    </menu>
+                </nav>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <h2 class="header__title">
+                    Legendary style of Zalora watches
+                </h2>
+                <span class="header__text">
+                    Only for <del>200</del> <strong>139</strong> $
+                </span>
+                <a href="" class="link-order">Order</a>
+            </div>
+        </div>
+    </header>
+    <section class="description">
+        <div class="container">
+            <span class="description__content">
+                <h2 class="description__title">
+                    Zalora
+                </h2>
+                <p class="description__text">
+                    Zalora watch style is a mixture of Dutch minimalism and modern aesthetics of New York. Zalora was created for free people, and will appeal to both classics lovers and adherents of modern trends. A mixture of functionality and style is combined in a sophisticated case, and a variety of shades will allow you to choose a watch for any look. <br>
+                    Zalora is a tribute to the freedom that is in the air of Amsterdam and New York, the cities in which their concept was born, and we are happy to present it to you!
+                </p>
+            </span>
+        </div>
+    </section>
+    <section class="catalogue">
+        <div class="container ">    
+            <h1 class="section-title">
+                Catalogue
+            </h1>
+            <div class="row">
+                <div class="offer col-md-12">
+                    <img class="offer__image col-md-6" src="img/watch1.png" alt="Watch">
+                    <span class="offer__description col-md-6">
+                        <h3 class="offer__title">
+                            Zalora Gold
+                        </h3>
+                        <ul class="offer__list">
+                            <li class="offer__item">White-Gold / 38mm</li>
+                            <li class="offer__item">Japanese quartz movement</li>
+                            <li class="offer__item">Stainless steel case</li>
+                            <li class="offer__item">Сonvenient delay mechanism</li>
+                        </ul>
+                        <p class="offer__price">
+                            <strong class="offer__real-price">295 $ </strong>
+                            <del class="offer__last-price">600 $</del>
+                        </p>
+                        <a href="#" class="link-order">Buy at a discount</a>
+                    </span>
+                </div>
+                <div class="offer col-md-12">
+                    <img class="offer__image col-md-6" src="img/watch2.png" alt="Watch">
+                    <span class="offer__description col-md-6">
+                        <h3 class="offer__title">
+                            Zalora Gold
+                        </h3>
+                        <ul class="offer__list">
+                            <li class="offer__item">White-Rose Gold / 38mm</li>
+                            <li class="offer__item">Japanese quartz movement</li>
+                            <li class="offer__item">Stainless steel case</li>
+                            <li class="offer__item">Сonvenient delay mechanism</li>
+                        </ul>
+                        <p class="offer__price">
+                            <strong class="offer__real-price">295 $ </strong>
+                            <del class="offer__last-price">600 $</del>
+                        </p>
+                        <a href="#" class="link-order">Buy at a discount</a>
+                    </span>
+                </div>
+                <div class="offer col-md-12">
+                    <img class="offer__image col-md-6" src="img/watch3.png" alt="Watch">
+                    <span class="offer__description col-md-6">
+                        <h3 class="offer__title">
+                            Zalora Rose Gold
+                        </h3>
+                        <ul class="offer__list">
+                            <li class="offer__item">Zalora Gold Black / 38mm</li>
+                            <li class="offer__item">Japanese quartz movement</li>
+                            <li class="offer__item">Stainless steel case</li>
+                            <li class="offer__item">Сonvenient delay mechanism</li>
+                        </ul>
+                        <p class="offer__price">
+                            <strong class="offer__real-price">295 $ </strong>
+                            <del class="offer__last-price">600 $</del>
+                        </p>
+                        <a href="#" class="link-order">Buy at a discount</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container row">
+            <div class="feature col-md-4">
+                <img class="feature__image" src="img/delivery.svg" alt="delivery">
+                <span class="feature__text">
+                    <h3 class="feature__title">
+                        We will deliver in 1 day
+                    </h3>
+                    <p class="feature__description">
+                        Parcel in your city the next day after sending
+                    </p>
+                </span>
+            </div>
+            <div class="feature col-md-4">
+                <img class="feature__image" src="img/cash.svg" alt="cash">
+                <span class="feature__text">
+                    <h3 class="feature__title">
+                        Payment upon receipt
+                    </h3>
+                    <p class="feature__description">
+                        Pay only after checking the parcel at the department
+                    </p>
+                </span>
+            </div>
+            <div class="feature col-md-4">
+                <img class="feature__image" src="img/quality.svg" alt="Quality">
+                <span class="feature__text">
+                    <h3 class="feature__title">
+                        Quality assurance
+                    </h3>
+                    <p class="feature__description">
+                        If something does not suit you, you can return the product within 14 days
+                    </p>
+                </span>
+            </div>
+        </div>
+    </section>
+    <section class="other-offers">
+        <div class="container row">
+            <div class="offer col-md-4">
+                <img class="offer__image col-md-4" src="img/watch4.png" alt="Watch">
+                <span class="offer__description col-md-6">
+                    <h3 class="offer__title">
+                        Zalora Gray-White
+                    </h3>
+                    <ul class="offer__list">
+                        <li class="offer__item">Zalora White Gold / 38mm</li>
+                        <li class="offer__item">Japanese quartz movement</li>
+                        <li class="offer__item">Stainless steel case</li>
+                        <li class="offer__item">Сonvenient delay mechanism</li>
+                    </ul>
+                    <p class="offer__price">
+                        <strong class="offer__real-price">295 $ </strong>
+                        <del class="offer__last-price">600 $</del>
+                    </p>
+                    <a href="#" class="link-order">Buy at a discount</a>
+                </span>
+            </div>
+            <div class="offer col-md-4">
+                <img class="offer__image col-md-4" src="img/watch5.png" alt="Watch">
+                <span class="offer__description col-md-6">
+                    <h3 class="offer__title">
+                        Zalora Blue
+                    </h3>
+                    <ul class="offer__list">
+                        <li class="offer__item">Zalora Light-Blue / 38mm</li>
+                        <li class="offer__item">Japanese quartz movement</li>
+                        <li class="offer__item">Stainless steel case</li>
+                        <li class="offer__item">Сonvenient delay mechanism</li>
+                    </ul>
+                    <p class="offer__price">
+                        <strong class="offer__real-price">295 $ </strong>
+                        <del class="offer__last-price">600 $</del>
+                    </p>
+                    <a href="#" class="link-order">Buy at a discount</a>
+                </span>
+            </div>
+            <div class="offer col-md-4">
+                <img class="offer__image col-md-4" src="img/watch6.png" alt="Watch">
+                <span class="offer__description col-md-6">
+                    <h3 class="offer__title">
+                        Zalora Light Gold
+                    </h3>
+                    <ul class="offer__list">
+                        <li class="offer__item">Zalora Light Gold / 38mm</li>
+                        <li class="offer__item">Japanese quartz movement</li>
+                        <li class="offer__item">Stainless steel case</li>
+                        <li class="offer__item">Сonvenient delay mechanism</li>
+                    </ul>
+                    <p class="offer__price">
+                        <strong class="offer__real-price">295 $ </strong>
+                        <del class="offer__last-price">600 $</del>
+                    </p>
+                    <a href="#" class="link-order">Buy at a discount</a>
+                </span>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="container">
+            <h1 class="section-title">
+                #Zalora
+            </h1>
+            <div class="row">
+                <img class="gallery__image col-md-3" src="img/gal1.jpg" alt="watch">
+                <img class="gallery__image col-md-3" src="img/gal2.jpg" alt="watch">
+                <img class="gallery__image col-md-3" src="img/gal3.jpg" alt="watch">
+                <img class="gallery__image col-md-3" src="img/gal4.jpg" alt="watch">
+                <img class="gallery__image col-md-3" src="img/gal5.jpg" alt="watch">
+                <img class="gallery__image col-md-3" src="img/gal6.jpg" alt="watch">
+                <img class="gallery__image col-md-3" src="img/gal7.jpg" alt="watch">
+                <img class="gallery__image col-md-3" src="img/gal8.jpg" alt="watch">
+            </div>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="container">
+            <h1 class="section-title">
+                Often Questions
+            </h1>
+            <div class="questions__block">
+                <h2 class="question__title">
+                    How to order?
+                </h2>
+                <p class="question__text">
+                    Ostavlyayte zayavku na sayte, yesli vy uspeli do 15:00 otpravim v etot zhe den', yesli posle, to na sleduyushchiy rabochiy. Obychno dostavka zanimayet 1 den', maksimum 2.
+                    158/5000
+                    Leave a request on the site, if you made it before 15:00 we will send it on the same day, if after, then on the next working day. It usually takes 1 day for delivery, maximum 2.
+                </p>
+            </div>
+            <div class="questions__block">
+                <h2 class="question__title">
+                    And if you don't like it?
+                </h2>
+                <p class="question__text">
+                    Order by cash on delivery, check immediately by mail, if something does not suit you, you can immediately return it without paying anything! But, believe me, you will love them right away;)
+                </p>
+            </div>
+            <div class="questions__block">
+                <h2 class="question__title">
+                    Will they suit me?
+                </h2>
+                <p class="question__text">
+                    The Rosefield watch has a convenient fastening mechanism, it will fit any handle, and the dial size will perfectly fit almost everyone. Just pick your favorite color!
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="contacts">
+        <div class="container">
+            <h1 class="section-title">
+                Contacts
+            </h1>
+            <div class="contacts__container">
+                <span class="contacts__number">
+                    +38 (098) 873-63-52
+                </span>
+                <span class="contacts__instagram">
+                    insta: lady.baellerry
+                </span>
+            </div>
+        </div>
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>
