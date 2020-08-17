@@ -337,10 +337,68 @@ template {
   display: none;
 }
 
-body {
-  background-color: #a15d96;
+.body {
+  background-color: #334264;
+  color: #fff;
+  font-family: 'Barlow', sans-serif;
+  letter-spacing: 1px;
 }
 
-.logo {
-  width: 300px;
+.header__top {
+  background-color: #334264;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header__logo {
+  margin-top: -35px;
+  width: 160px;
+}
+
+.header__navigation {
+  display: inline-block;
+}
+
+.header__menu {
+  list-style-type: none;
+  margin-left: 150px;
+  width: 100%;
+}
+
+.header__item {
+  float: left;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.header__link-item {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header__bottom {
+  background: url(../img/header.webp) center no-repeat;
+  background-size: cover;
+  height: 650px;
+  padding-top: 65px;
+}
+
+.header__title {
+  font-weight: 600;
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+
+.header__text {
+  display: block;
+  font-size: 26px;
+  margin-bottom: 80px;
+}
+
+.link-order {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 15px 50px;
+  text-transform: uppercase;
 }
