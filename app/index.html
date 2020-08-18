@@ -10,7 +10,6 @@
     <script src = "../node_modules/gsap/dist/gsap.min.js"></script>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script>
-        $(function(){
   gsap.from(".header__logo", {duration: 2, x: 300, opacity: 0, scale: 0.5});
   gsap.from(".header__item", {duration: 2, y: -50, opacity: 0, scale: 0.5});
   gsap.from(".header__title", { duration: 2, ease: "back.out(1.7)", x: -300 });
@@ -42,7 +41,6 @@
       gsap.to("#firstWatch .offer__description", { duration: 2,  ease: "power2.out", opacity: 1, y: -200 });
     }
   }
-})
     </script>
 </head>
 <body class="body">
