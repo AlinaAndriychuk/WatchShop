@@ -352,7 +352,8 @@ template {
 }
 
 .header__logo {
-  margin-top: -35px;
+  margin-top: -50px;
+  margin-bottom: 10px;
   width: 160px;
 }
 
@@ -368,8 +369,7 @@ template {
 
 .header__item {
   float: left;
-  margin-right: 20px;
-  margin-top: 5px;
+  margin: 15px 20px 10px 0;
 }
 
 .header__link-item {
@@ -379,14 +379,15 @@ template {
 
 .header__bottom {
   background: url(../img/header.webp) center no-repeat;
+  background-position-y: 65px;
   background-size: cover;
-  height: 650px;
+  height: 700px;
   padding-top: 65px;
 }
 
 .header__title {
   font-weight: 600;
-  margin-top: 200px;
+  margin-top: 230px;
   margin-bottom: 30px;
 }
 
@@ -401,4 +402,67 @@ template {
   color: #fff;
   padding: 15px 50px;
   text-transform: uppercase;
+}
+
+.description__content {
+  background-color: #7488ad;
+  margin-top: 130px;
+  padding: 50px;
+}
+
+.description__title {
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.description__text {
+  font-size: 20px;
+}
+
+.section-title {
+  font-size: 80px;
+  padding: 80px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.offer {
+  height: auto;
+}
+
+.offer__image {
+  float: right;
+}
+
+.offer__description--right {
+  float: right;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: -100px;
+}
+
+.offer__description {
+  margin: 100px 150px;
+}
+
+.offer__title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.offer__item {
+  list-style-position: -20px;
+}
+
+.offer__price {
+  padding-bottom: 25px;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature__image {
+  margin: 60px 90px 20px;
 }
