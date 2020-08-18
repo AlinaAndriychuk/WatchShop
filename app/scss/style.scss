@@ -1,6 +1,8 @@
 @import "../../node_modules/normalize.css/normalize";
 
 $mainColor: #334264;
+$grayColor: #7488ad;
+$pinkColor: #fffaf9;
 
 .body {
     background-color: $mainColor;
@@ -17,7 +19,8 @@ $mainColor: #334264;
         z-index: 1000;
     }
     &__logo {
-        margin-top: -35px;
+        margin-top: -50px;
+        margin-bottom: 10px;
         width: 160px;
     }
     &__navigation {
@@ -30,22 +33,22 @@ $mainColor: #334264;
     }
     &__item {
         float: left;
-        margin-right: 20px;
-        margin-top: 5px;
+        margin: 15px 20px 10px 0;
     }
     &__link-item {
         color: #fff;
         text-transform: uppercase;
     }
     &__bottom {
-        background: url(../img/header.webp)  center no-repeat;
+        background: url(../img/header.webp) center no-repeat;
+        background-position-y: 65px;
         background-size: cover;
-        height: 650px;
+        height: 700px;
         padding-top: 65px;
     }
     &__title {
         font-weight: 600;
-        margin-top: 200px;
+        margin-top: 230px;
         margin-bottom: 30px;
     }
     &__text {
@@ -62,3 +65,58 @@ $mainColor: #334264;
     text-transform: uppercase;
 }
 
+.description {
+    &__content {
+        background-color: $grayColor;
+        margin-top: 130px;
+        padding: 50px;
+    }
+    &__title {
+        font-weight: 600;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+    }
+    &__text {
+        font-size: 20px;
+    }
+}
+
+.section-title {
+    font-size: 80px;
+    padding: 80px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.offer {
+    height: auto;
+    &__image {
+        float: right;
+    }
+    &__description--right {
+        float: right;
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-right: -100px;
+    }
+    &__description {
+        margin: 100px 150px;
+    }
+    &__title {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    &__item {
+        list-style-position: -20px;;
+    }
+    &__price {
+        padding-bottom: 25px;
+    }
+}
+
+.feature {
+    text-align: center;
+    &__image {
+        margin: 60px 90px 20px;
+    }
+}
