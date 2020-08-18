@@ -424,9 +424,10 @@ template {
 .description__content {
   background-color: #7488ad;
   margin-top: 230px;
-  margin-bottom: -100px;
-  padding: 50px;
   opacity: 0;
+  padding: 50px;
+  position: absolute;
+  transition-duration: 2s;
 }
 
 .description__title {
