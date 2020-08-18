@@ -15,9 +15,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
-    "normalize.css": "^8.0.1"
-  },
-  "dependencies": {
+    "normalize.css": "^8.0.1",
     "jquery": "^3.5.1"
   }
 }

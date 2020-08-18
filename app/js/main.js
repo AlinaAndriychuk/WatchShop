@@ -1,6 +1,9 @@
 
+
+let oefj = 1;
+alert("hello");
 $(function(){
-  
+  alert("hello")
   gsap.from(".header__logo", {duration: 2, x: 300, opacity: 0, scale: 0.5});
   gsap.from(".header__item", {duration: 2, y: -50, opacity: 0, scale: 0.5});
   gsap.from(".header__title", { duration: 2, ease: "back.out(1.7)", x: -300 });
@@ -22,7 +25,7 @@ $(function(){
 
   function effectSlideUp(status){
     if(status){
-      $(".description__content").css({ duration: 2,  ease: "back.out(1.7)", opacity: 1, marginTop: 100, position: "relative" })
+      $(".description__content").css({ duration: 2, opacity: 1, marginTop: 100, position: "relative" })
     }
   }
 
