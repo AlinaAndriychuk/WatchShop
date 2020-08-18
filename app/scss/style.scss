@@ -2,13 +2,13 @@
 
 $mainColor: #334264;
 $grayColor: #7488ad;
-$pinkColor: #fffaf9;
 
 .body {
     background-color: $mainColor;
     color: #fff;
     font-family: 'Barlow', sans-serif;
     letter-spacing: 1px;
+    overflow-x: hidden;
 }
 
 .header {
@@ -33,11 +33,20 @@ $pinkColor: #fffaf9;
     }
     &__item {
         float: left;
-        margin: 15px 20px 10px 0;
+        margin: 11px 0 10px 0;
+    }
+    &__link-item:hover {
+        background-color: #fff;
+        border-radius: 5%;
+        color: #000;
+        padding: 40px 20px;
+        text-decoration: none;
     }
     &__link-item {
         color: #fff;
+        padding: 30px 10px;
         text-transform: uppercase;
+        transition-duration: 0.3s;
     }
     &__bottom {
         background: url(../img/header.webp) center no-repeat;
@@ -52,7 +61,6 @@ $pinkColor: #fffaf9;
         margin-bottom: 30px;
     }
     &__text {
-        display: block;
         font-size: 26px;
         margin-bottom: 80px;
     }
@@ -61,15 +69,24 @@ $pinkColor: #fffaf9;
 .link-order {
     border: 1px solid #fff;
     color: #fff;
-    padding: 15px 50px;
+    padding: 15px 70px;
     text-transform: uppercase;
+    transition-duration: 0.3s;
+}
+
+.link-order:hover {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
 }
 
 .description {
     &__content {
         background-color: $grayColor;
-        margin-top: 130px;
+        margin-top: 230px;
+        margin-bottom: -100px;
         padding: 50px;
+        opacity: 0;
     }
     &__title {
         font-weight: 600;
@@ -92,6 +109,8 @@ $pinkColor: #fffaf9;
     height: auto;
     &__image {
         float: right;
+        margin-right: -300px;
+        opacity: 0;
     }
     &__description--right {
         float: right;
@@ -100,7 +119,9 @@ $pinkColor: #fffaf9;
         margin-right: -100px;
     }
     &__description {
-        margin: 100px 150px;
+        margin-top: 300px;
+        margin-left: 100px;
+        opacity: 0;
     }
     &__title {
         font-size: 36px;
@@ -117,7 +138,7 @@ $pinkColor: #fffaf9;
 .feature {
     text-align: center;
     &__image {
-        margin: 60px 90px 20px;
+        margin: 100px 90px 20px;
     }
 }
 
@@ -128,10 +149,35 @@ $pinkColor: #fffaf9;
     }
     .offer__image {
         float: none;
-        margin-top: 60px
+        margin-top: 100px;
     }
 }
 
 .gallery__image {
     margin-bottom: 30px;
+}
+
+.questions {
+    background-color: #212c44;
+    margin-top: 60px;
+    padding-bottom: 70px;
+    &__block {
+        background-color: $mainColor;
+        padding: 20px;
+    }
+    &__title {
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+}
+
+.contacts {
+    &__container {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.footer__logo {
+    width: 200px;
 }

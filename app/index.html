@@ -18,16 +18,16 @@
                 <nav class="header__navigation">
                     <menu class="header__menu">
                         <li class="header__item">
-                            <a href="#" class="header__link-item">About Zalora</a>
+                            <a href="#description" class="header__link-item">About Zalora</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link-item">Catalogue</a>
+                            <a href="#catalogue" class="header__link-item">Catalogue</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link-item">Gallery</a>
+                            <a href="#gallery" class="header__link-item">Gallery</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link-item">Contacts</a>
+                            <a href="#contacts" class="header__link-item">Contacts</a>
                         </li>
                     </menu>
                 </nav>
@@ -38,14 +38,15 @@
                 <h2 class="header__title">
                     Legendary style of Zalora watches
                 </h2>
-                <span class="header__text">
+                <div class="header__text">
                     Only for <del>200</del> <strong>139</strong> $
-                </span>
-                <a href="" class="link-order">Order</a>
+                </div>
+                <a href="#" class="link-order">Order</a>
             </div>
         </div>
     </header>
     <section class="description">
+        <a name="description"></a>
         <div class="container">
             <div class="description__content">
                 <h2 class="description__title">
@@ -59,12 +60,13 @@
         </div>
     </section>
     <section class="catalogue">
+        <a name="catalogue"></a>
         <div class="container ">    
             <h1 class="section-title">
                 Catalogue
             </h1>
             <div class="row">
-                <div class="offer col-md-12">
+                <div class="offer col-md-12" id="firstWatch">
                     <img class="offer__image col-md-6" src="img/watch1.png" alt="Watch">
                     <div class="offer__description col-md-6">
                         <h3 class="offer__title">
@@ -83,7 +85,7 @@
                         <a href="#" class="link-order">Buy at a discount</a>
                     </div>
                 </div>
-                <div class="offer col-md-12">
+                <div class="offer col-md-12" id="secondWatch">
                     <div class="offer__description--right col-md-6">
                         <h3 class="offer__title">
                             Zalora Gold
@@ -102,7 +104,7 @@
                     </div>
                     <img class="offer__image col-md-6" src="img/watch2.png" alt="Watch">
                 </div>
-                <div class="offer col-md-12">
+                <div class="offer col-md-12" id="thirdWatch">
                     <img class="offer__image col-md-6" src="img/watch3.png" alt="Watch">
                     <div class="offer__description col-md-6">
                         <h3 class="offer__title">
@@ -228,6 +230,7 @@
         </div>
     </section>
     <section class="gallery">
+        <a name="gallery"></a>
         <div class="container">
             <h1 class="section-title">
                 #Zalora
@@ -245,39 +248,47 @@
         </div>
     </section>
     <section class="questions">
+        <a name="questions"></a>
         <div class="container">
             <h1 class="section-title">
                 Often Questions
             </h1>
-            <div class="questions__block">
-                <h2 class="question__title">
-                    How to order?
-                </h2>
-                <p class="question__text">
-                    Ostavlyayte zayavku na sayte, yesli vy uspeli do 15:00 otpravim v etot zhe den', yesli posle, to na sleduyushchiy rabochiy. Obychno dostavka zanimayet 1 den', maksimum 2.
-                    158/5000
-                    Leave a request on the site, if you made it before 15:00 we will send it on the same day, if after, then on the next working day. It usually takes 1 day for delivery, maximum 2.
-                </p>
-            </div>
-            <div class="questions__block">
-                <h2 class="question__title">
-                    And if you don't like it?
-                </h2>
-                <p class="question__text">
-                    Order by cash on delivery, check immediately by mail, if something does not suit you, you can immediately return it without paying anything! But, believe me, you will love them right away;)
-                </p>
-            </div>
-            <div class="questions__block">
-                <h2 class="question__title">
-                    Will they suit me?
-                </h2>
-                <p class="question__text">
-                    The Rosefield watch has a convenient fastening mechanism, it will fit any handle, and the dial size will perfectly fit almost everyone. Just pick your favorite color!
-                </p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="questions__block">
+                        <h2 class="questions__title">
+                            How to order?
+                        </h2>
+                        <p class="questions__text">
+                            Leave a request on the site, if you made it before 15:00 we will send it on the same day, if after, then on the next working day. It usually takes 1 day for delivery, maximum 2.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="questions__block">
+                        <h2 class="questions__title">
+                            And if you don't like it?
+                        </h2>
+                        <p class="questions__text">
+                            Order by cash on delivery, check immediately by mail, if something does not suit you, you can immediately return it without paying anything! But, believe me, you will love them;)
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="questions__block">
+                        <h2 class="questions__title">
+                            Will they suit me?
+                        </h2>
+                        <p class="questions__text">
+                            The Zalora watch has a convenient fastening mechanism, it will fit any handle, and the dial size will perfectly fit almost everyone. Just pick your favorite color!
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <footer class="contacts">
+        <a name="contacts"></a>
         <div class="container">
             <h1 class="section-title">
                 Contacts
@@ -286,6 +297,7 @@
                 <span class="contacts__number">
                     +38 (098) 873-63-52
                 </span>
+                <img src="img/logo.webp" alt="logo" class="footer__logo">
                 <span class="contacts__instagram">
                     insta: lady.baellerry
                 </span>
