@@ -466,3 +466,16 @@ template {
 .feature__image {
   margin: 60px 90px 20px;
 }
+
+.other-offers .offer__description {
+  margin: 0;
+}
+
+.other-offers .offer__image {
+  float: none;
+  margin-top: 60px;
+}
+
+.gallery__image {
+  margin-bottom: 30px;
+}
