@@ -495,17 +495,29 @@ template {
   text-align: center;
 }
 
-.feature__image {
+.feature__image-container {
+  height: 100px;
   margin: 100px 90px 20px;
 }
 
+.feature__image {
+  height: 0;
+  opacity: 0;
+}
+
+.other-offers .offer {
+  height: 720px;
+}
+
 .other-offers .offer__description {
-  margin: 0;
+  margin: 220px 0;
+  margin-left: 30px;
 }
 
 .other-offers .offer__image {
   float: none;
   margin-top: 100px;
+  margin-left: -300px;
 }
 
 .gallery__image {
