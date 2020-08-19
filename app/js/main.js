@@ -8,7 +8,10 @@ $(function(){
   let current = true,
     current1 = true,
     current2 = true,
-    current3 = true;
+    current3 = true,
+    current4 = true
+    current5 = true,
+    current6 = true;
 
   $(window).scroll(function() {
     if ($(this).scrollTop() > 300 && $(this).scrollTop() < 900) {
@@ -20,9 +23,15 @@ $(function(){
     } if($(this).scrollTop() > 1600 && $(this).scrollTop() < 2200) {
       effectSlideCatalogueTwo(current2);
       current2 = false;
-    } if($(this).scrollTop() > 2100 && $(this).scrollTop() < 2700) {
+    } if($(this).scrollTop() > 2100 && $(this).scrollTop() < 2750) {
       effectSlideCatalogueThree(current3);
       current3 = false;
+    } if($(this).scrollTop() > 2600 && $(this).scrollTop() < 3150) {
+      effectRounds(current4);
+      current4 = false;
+    } if($(this).scrollTop() > 3000 && $(this).scrollTop() < 3500) {
+      effectSlideToTheLeft(current5);
+      current6 = false;
     }
   });
 
@@ -50,6 +59,19 @@ $(function(){
     if(status){
       gsap.to("#thirdWatch .offer__image", { duration: 2,  ease: "back.out(1.7)", opacity: 1, x: -250 });
       gsap.to("#thirdWatch .offer__description", { duration: 2,  ease: "power2.out", opacity: 1, y: -200 });
+    }
+  }
+
+  function effectRounds(status) {
+    if(status){
+      gsap.to(".feature__image", {duration: 1.3, y: 0, height: 100, opacity: 1, scale: 1});
+    }
+  }
+
+  function effectSlideToTheLeft(status) {
+    if(status){
+      gsap.to(".other-offers .offer__image", {duration: 2, opacity: 1, scale: 1, x: 300});
+      gsap.to(".other-offers .offer__description", { duration: 2,  ease: "power2.out", opacity: 1, y: -200 });
     }
   }
 })
