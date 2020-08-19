@@ -424,10 +424,9 @@ template {
 .description__content {
   background-color: #7488ad;
   margin-top: 230px;
-  opacity: 0;
+  margin-bottom: -100px;
   padding: 50px;
-  position: absolute;
-  transition-duration: 2s;
+  opacity: 0;
 }
 
 .description__title {
@@ -453,15 +452,24 @@ template {
 
 .offer__image {
   float: right;
-  margin-right: -300px;
+  margin-right: -100px;
   opacity: 0;
+  max-width: 280px;
+}
+
+.offer__image--right {
+  float: left;
+  margin-left: -180px;
+  opacity: 0;
+  max-width: 280px;
 }
 
 .offer__description--right {
   float: right;
-  margin-top: 100px;
-  margin-left: 100px;
+  margin-top: 300px;
+  margin-left: 120px;
   margin-right: -100px;
+  opacity: 0;
 }
 
 .offer__description {

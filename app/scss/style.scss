@@ -84,10 +84,9 @@ $grayColor: #7488ad;
     &__content {
         background-color: $grayColor;
         margin-top: 230px;
-        opacity: 0;
+        margin-bottom: -100px;
         padding: 50px;
-        position: absolute;
-        transition-duration: 2s;
+        opacity: 0;
     }
     &__title {
         font-weight: 600;
@@ -110,14 +109,22 @@ $grayColor: #7488ad;
     height: auto;
     &__image {
         float: right;
-        margin-right: -300px;
+        margin-right: -100px;
         opacity: 0;
+        max-width: 280px;
+    }
+    &__image--right {
+        float: left;
+        margin-left: -180px; 
+        opacity: 0;
+        max-width: 280px;
     }
     &__description--right {
         float: right;
-        margin-top: 100px;
-        margin-left: 100px;
+        margin-top: 300px;
+        margin-left: 120px;
         margin-right: -100px;
+        opacity: 0;
     }
     &__description {
         margin-top: 300px;
