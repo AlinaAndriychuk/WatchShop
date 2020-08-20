@@ -145,19 +145,28 @@ $grayColor: #7488ad;
 
 .feature {
     text-align: center;
-    &__image {
+    &__image-container {
+        height: 100px;
         margin: 100px 90px 20px;
+    }
+    &__image {
+        height: 0;
+        opacity: 0;
     }
 }
 
 .other-offers {
-
+    .offer {
+        height: 720px;
+    }
     .offer__description {
-        margin: 0;
+        margin: 220px 0;
+        margin-left: 30px;
     }
     .offer__image {
         float: none;
         margin-top: 100px;
+        margin-left: -300px;
     }
 }
 
