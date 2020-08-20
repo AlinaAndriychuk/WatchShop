@@ -353,6 +353,7 @@ template {
 }
 
 .header__logo {
+  height: 83px;
   margin-top: -50px;
   margin-bottom: 10px;
   width: 160px;
@@ -405,6 +406,10 @@ template {
 .header__text {
   font-size: 26px;
   margin-bottom: 80px;
+}
+
+.burger-menu {
+  display: none;
 }
 
 .link-order {
@@ -520,8 +525,14 @@ template {
   margin-left: -300px;
 }
 
+.gallery__image-container {
+  margin-bottom: 35px;
+  height: 250px;
+}
+
 .gallery__image {
-  margin-bottom: 30px;
+  height: 0;
+  width: 100%;
 }
 
 .questions {
@@ -531,13 +542,17 @@ template {
 }
 
 .questions__block {
-  background-color: #334264;
   padding: 20px;
 }
 
 .questions__title {
   font-size: 22px;
   margin-bottom: 50px;
+  opacity: 0;
+}
+
+.questions__text {
+  opacity: 0;
 }
 
 .contacts__container {
@@ -547,4 +562,47 @@ template {
 
 .footer__logo {
   width: 200px;
+}
+
+@media screen and (max-width: 1200px) {
+  .link-order {
+    padding: 15px 50px;
+  }
+  .offer__title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__logo {
+    margin-top: -14.5px;
+  }
+  .header__menu {
+    margin: 0 0 0 -50px;
+    padding: 0;
+    display: none;
+    width: auto;
+  }
+  .header__item {
+    float: none;
+    text-align: center;
+  }
+  .header__link-item {
+    padding: 5px;
+  }
+  .header__link-item:hover {
+    padding: 5px;
+    background-color: #334264;
+  }
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+    margin-top: 5px;
+    max-height: 71px;
+    width: 65px;
+  }
 }
