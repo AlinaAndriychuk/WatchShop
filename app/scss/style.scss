@@ -170,8 +170,15 @@ $grayColor: #7488ad;
     }
 }
 
-.gallery__image {
-    margin-bottom: 30px;
+.gallery {
+    &__image-container {
+        margin-bottom: 35px;
+        height: 250px;
+    }
+    &__image {
+        height: 0;
+        width: 100%;
+    }
 }
 
 .questions {
@@ -179,12 +186,15 @@ $grayColor: #7488ad;
     margin-top: 60px;
     padding-bottom: 70px;
     &__block {
-        background-color: $mainColor;
         padding: 20px;
     }
     &__title {
         font-size: 22px;
         margin-bottom: 50px;
+        opacity: 0;
+    }
+    &__text {
+        opacity: 0;
     }
 }
 
@@ -197,4 +207,17 @@ $grayColor: #7488ad;
 
 .footer__logo {
     width: 200px;
+}
+
+@media screen and (max-width: 1200px) {
+    .link-order {
+        padding: 15px 50px;
+    }
+    .offer__title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    
 }
