@@ -764,6 +764,9 @@ template {
     text-align: center;
     width: 100%;
   }
+  .gallery__image-container {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 420px) {

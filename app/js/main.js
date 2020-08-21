@@ -71,7 +71,7 @@ $(function(){
         effectText(current7);
         current7 = false;
       }
-    }if(document.documentElement.clientWidth <= 750 && document.documentElement.clientWidth > 550){
+    }if(document.documentElement.clientWidth <= 750 && document.documentElement.clientWidth > 558){
       if ($(this).scrollTop() > 300 && $(this).scrollTop() < 900) {
         effectSlideRight(current);
         current = false;
@@ -97,7 +97,7 @@ $(function(){
         effectText(current7);
         current7 = false;
       }
-    }if(document.documentElement.clientWidth <= 550){
+    }if(document.documentElement.clientWidth <= 558 && document.documentElement.clientWidth > 440){
       if(!stylesOff) {
         for(let every of animatedElements) {
           $(every).attr("style", "")
@@ -113,6 +113,20 @@ $(function(){
         effectGallery(current6);
         current6 = false;
       } if($(this).scrollTop() > 11450) {
+        effectText(current7);
+        current7 = false;
+      }
+    }if(document.documentElement.clientWidth <= 440){
+      if ($(this).scrollTop() > 300 && $(this).scrollTop() < 1300) {
+        effectSlideRight(current);
+        current = false;
+      } if($(this).scrollTop() > 3500 && $(this).scrollTop() < 4500) {
+        effectRounds(current4);
+        current4 = false;
+      } if($(this).scrollTop() > 6600 && $(this).scrollTop() < 11400) {
+        effectGallery(current6);
+        current6 = false;
+      } if($(this).scrollTop() > 8950) {
         effectText(current7);
         current7 = false;
       }
