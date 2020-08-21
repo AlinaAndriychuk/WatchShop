@@ -88,8 +88,9 @@ $grayColor: #7488ad;
 .description {
     &__content {
         background-color: $grayColor;
-        margin-top: 230px;
-        margin-bottom: -100px;
+        margin-top: 100px;
+        margin-left: -100px;
+        max-width: 100%;
         padding: 50px;
         opacity: 0;
     }
@@ -139,6 +140,9 @@ $grayColor: #7488ad;
     &__title {
         font-size: 36px;
         font-weight: 600;
+    }
+    &__list {
+        padding: 0;
     }
     &__item {
         list-style-position: -20px;;
@@ -227,7 +231,9 @@ $grayColor: #7488ad;
 @media screen and (max-width: 1000px) {
     .header {
         &__bottom {
-            background-position-x: -1150px;
+            background: url(../img/dda5f47f2695a13ea49ba9fbb5fb8b2d189df425.webp) no-repeat;
+            background-size: cover;
+            background-position-x: -800px;
             text-align: right;
         }
         &__container {
@@ -262,26 +268,23 @@ $grayColor: #7488ad;
         max-height: 71px;
         width: 65px;
     }
-    .description__content {
-        opacity: 1;
-        margin-top: 100px;
-        margin-bottom: 0;
-    }
     .offer {
-        &__image, &__image--right  {
+        height: 850px;
+        &__image {
             float: none;
-            margin-left: 33%;
-            opacity: 1;
+            margin-left: 62%;
             width: 100%;
         }
-        &__description {
-            margin: 50px 0 50px 28%;
-            opacity: 1;
+        &__image--right  {
+            float: none;
+            margin-left: 3%;
+            width: 100%;
+        }
+        &__description, &__description--right {
+            margin: 230px 0 50px 33%;
         }
         &__description--right {
             float: none;
-            margin: 50px 0 50px 28%;
-            opacity: 1;
         }
     }
 
@@ -289,62 +292,61 @@ $grayColor: #7488ad;
         &__image-container {
             margin: 70px 0 20px;
         }
-        &__image {
-            opacity: 1;
-            height: auto;
-        }
     }
 
     .other-offers {
+        .offer {
+            height: 750px;
+        }
         .offer__image {
-            margin: 50px 0;
+            margin-left: -270px;
         }
         .offer__title{
             font-size: 24px;
         }
         .offer__description {
-            margin: 0;
-        }
-        .link-order {
-            padding: 10px 20px;
-        } 
-    }
-
-    .gallery{
-        &__image-container {
-            height: auto;
-            margin-bottom: 30px;
-        }
-        &__image {
-            height: auto;
-            opacity: 1;
-        }
-    }
-
-    .questions {
-        &__block {
-            background-color: $mainColor;
-            height: 400px;
-        }
-        &__title {
-            opacity: 1;
-        }
-        &__text {
-            opacity: 1;
+            margin-top: 230px;
         }
     }
 
 
 }
-
-@media screen and (max-width: 768px) {
-    .header {
-        &__bottom {
-            background-position-x: -1380px;
-            color: #000;
+@media screen and (max-width: 991px) {
+    .offer {
+        &__image {
+            margin-left: 67%;
         }
+        &__description, &__description--right {
+            margin-left: 31%;
+        }
+        &__image--right {
+            margin-left: -12%;
+        }
+    }
+    .other-offers {
+        .link-order {
+            padding: 15px 10px;
+        }
+        .offer__title {
+            font-size: 20px;
+        }
+    }
+    .gallery__image-container {
+        height: 150px;
+    }
+    .questions {
+        &__block {
+            height: 400px;
+        }
+    }
+}    
+
+@media screen and (max-width: 767px) {
+    .header {
         &__title {
-            margin-top: 370px;
+            margin-top: 350px;
+            text-shadow: #000 1px 1px 0, #000 -1px -1px 0, 
+            #000 -1px 1px 0, #000 1px -1px 0;
         }
         &__text {
             margin-bottom: 50px;
@@ -354,26 +356,21 @@ $grayColor: #7488ad;
     .description__content {
         padding: 20px;
     }
-    
-    .link-order {
-        background-color: #fff;
-        color: black;
-        text-align: center;
-        width: 100%;
-    }
+
 
     .section-title {
         font-size: 40px;
     }
 
     .offer {
-        &__image, &__image--right{
-            margin-left: 25%;
-            width: 60%;
+        &__image{
+            margin-left: 74%;
+        }
+        &__image--right {
+            margin-left: -34%;
         }
         &__description, &__description--right {
-            margin-left: 0%;
-            width: 100%;
+            margin-left: 22%;
         }
     }
 
@@ -384,7 +381,10 @@ $grayColor: #7488ad;
         .offer__image {
             width: 70%;
             margin-top: 0px;
-            margin-left: 27%;
+            margin-left: -32%;
+        }
+        .offer__description{
+            margin-left: 25%;
         }
         .link-order {
             padding: 15px 50px;
@@ -397,9 +397,55 @@ $grayColor: #7488ad;
             margin-bottom: 30px;
         }
     }
+    .gallery__image-container {
+        height: 510px;
+    }
 
     .contacts__number {
         margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .offer {
+        height: auto;
+        margin-bottom: 50px;
+        &__image, &__image--right{
+            margin-left: 25%;
+            opacity: 1;
+            width: 60%;
+        }
+        &__description, &__description--right {
+            margin: 0;
+            opacity: 1;
+            text-align: center;
+            width: 100%;
+        }
+        &__item {
+            list-style-type: none;
+        }
+    }
+
+    .other-offers {
+        .offer {
+            height: auto;
+            margin-top: 50px;
+        }
+        .offer__image {
+            margin-top: 0px;
+            margin-left: 25%;
+            opacity: 1;
+            width: 60%;
+        }
+        .link-order {
+            padding: 15px 50px;
+        }
+        .offer__description {
+            margin: 0%;
+            opacity: 1;
+            text-align: center;
+            width: 100%;
+        }
     }
 }
 
@@ -409,19 +455,13 @@ $grayColor: #7488ad;
         margin-top: 70px;
         margin-left: -150px;
     }
-    .header__title {
-        margin-top: 350px;
-    }
     .section-title {
         padding: 80px 0;
         font-size: 30px;
     }
     .offer {
-        &__description {
-            width: 100%;
-        }
         .link-order {
-            padding: 10px 15px;
+            padding: 6% 8%;
         }
     }
 
