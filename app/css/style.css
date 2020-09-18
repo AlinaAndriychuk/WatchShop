@@ -680,7 +680,8 @@ template {
 @media screen and (max-width: 767px) {
   .header__title {
     margin-top: 350px;
-    text-shadow: #000 1px 1px 0, #000 -1px -1px 0,  #000 -1px 1px 0, #000 1px -1px 0;
+    text-shadow: #000 1px 1px 0, #000 -1px -1px 0, 
+ #000 -1px 1px 0, #000 1px -1px 0;
   }
   .header__text {
     margin-bottom: 50px;
