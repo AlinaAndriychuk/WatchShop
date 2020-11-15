@@ -354,8 +354,8 @@ template {
 
 .header__logo {
   height: 83px;
-  margin-top: -50px;
   margin-bottom: 10px;
+  margin-top: -50px;
   width: 160px;
 }
 
@@ -399,8 +399,8 @@ template {
 
 .header__title {
   font-weight: 600;
-  margin-top: 230px;
   margin-bottom: 30px;
+  margin-top: 230px;
 }
 
 .header__text {
@@ -428,8 +428,8 @@ template {
 
 .description__content {
   background-color: #7488ad;
-  margin-top: 100px;
   margin-left: -100px;
+  margin-top: 100px;
   max-width: 100%;
   padding: 50px;
   opacity: 0;
@@ -459,28 +459,28 @@ template {
 .offer__image {
   float: right;
   margin-right: -100px;
-  opacity: 0;
   max-width: 280px;
+  opacity: 0;
 }
 
 .offer__image--right {
   float: left;
   margin-left: -180px;
-  opacity: 0;
   max-width: 280px;
+  opacity: 0;
 }
 
 .offer__description--right {
   float: right;
-  margin-top: 300px;
   margin-left: 120px;
   margin-right: -100px;
+  margin-top: 300px;
   opacity: 0;
 }
 
 .offer__description {
-  margin-top: 300px;
   margin-left: 100px;
+  margin-top: 300px;
   opacity: 0;
 }
 
@@ -526,14 +526,14 @@ template {
 
 .other-offers .offer__image {
   float: none;
-  margin-top: 50px;
   margin-left: -250px;
+  margin-top: 50px;
   max-width: 250px;
 }
 
 .gallery__image-container {
-  margin-bottom: 35px;
   height: 250px;
+  margin-bottom: 35px;
 }
 
 .gallery__image {
@@ -564,6 +564,7 @@ template {
 .contacts__container {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 100px;
 }
 
 .footer__logo {
@@ -582,8 +583,8 @@ template {
 @media screen and (max-width: 1000px) {
   .header__bottom {
     background: url(../img/dda5f47f2695a13ea49ba9fbb5fb8b2d189df425.webp) no-repeat;
-    background-size: cover;
     background-position-x: -800px;
+    background-size: cover;
     text-align: right;
   }
   .header__container {
@@ -594,9 +595,9 @@ template {
     margin-top: -14.5px;
   }
   .header__menu {
+    display: none;
     margin: 0 0 0 -50px;
     padding: 0;
-    display: none;
     width: auto;
   }
   .header__item {
@@ -607,8 +608,8 @@ template {
     padding: 5px;
   }
   .header__link-item:hover {
-    padding: 5px;
     background-color: #334264;
+    padding: 5px;
   }
   .burger-menu {
     display: block;
@@ -680,8 +681,7 @@ template {
 @media screen and (max-width: 767px) {
   .header__title {
     margin-top: 350px;
-    text-shadow: #000 1px 1px 0, #000 -1px -1px 0, 
- #000 -1px 1px 0, #000 1px -1px 0;
+    text-shadow: #000 1px 1px 0, #000 -1px -1px 0, #000 -1px 1px 0, #000 1px -1px 0;
   }
   .header__text {
     margin-bottom: 50px;
@@ -705,9 +705,9 @@ template {
     margin-top: 50px;
   }
   .other-offers .offer__image {
-    width: 70%;
-    margin-top: 0px;
     margin-left: -32%;
+    margin-top: 0px;
+    width: 70%;
   }
   .other-offers .offer__description {
     margin-left: 25%;
@@ -751,8 +751,8 @@ template {
     margin-top: 50px;
   }
   .other-offers .offer__image {
-    margin-top: 0px;
     margin-left: 25%;
+    margin-top: 0;
     opacity: 1;
     width: 60%;
   }
@@ -760,7 +760,7 @@ template {
     padding: 15px 50px;
   }
   .other-offers .offer__description {
-    margin: 0%;
+    margin: 0;
     opacity: 1;
     text-align: center;
     width: 100%;
@@ -776,8 +776,8 @@ template {
     margin-left: -150px;
   }
   .section-title {
-    padding: 80px 0;
     font-size: 30px;
+    padding: 80px 0;
   }
   .offer .link-order {
     padding: 6% 8%;
@@ -785,6 +785,7 @@ template {
   .contacts__container {
     display: block;
     height: 200px;
+    margin-bottom: 0;
     text-align: center;
   }
 }
