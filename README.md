@@ -1,4 +1,4 @@
-# WatchShop
+# Watch Shop
 
 Home page 
 [Link](https://watch-shop-app.netlify.app/)
